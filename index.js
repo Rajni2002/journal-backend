@@ -24,7 +24,7 @@ app.use('/auth', authRouter);
 // app.use('/feeds', feedRouter);
 // simple route
 app.get("/", (req, res, ) => {
-  res.json({ message: "Welcome to journal api." });
+  res.status(200).json({ message: "Welcome to journal api." });
 });
 
 app.all("*", (req, res, next) => {
