@@ -19,11 +19,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use('/journal', journalRouter);
-app.use('/auth', authRouter);
+app.use('/api/journal', journalRouter);
+app.use('/api/auth', authRouter);
 // app.use('/feeds', feedRouter);
 // simple route
-app.get("/", (req, res, ) => {
+app.get("/api", (req, res, ) => {
   res.status(200).json({ message: "Welcome to journal api." });
 });
 
